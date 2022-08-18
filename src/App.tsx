@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 // Pages
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import About from './pages/About';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/*" element={<NotFound />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
       <Footer />
